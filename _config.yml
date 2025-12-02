@@ -1,52 +1,31 @@
-locale: "en-US"
-title: Strata # Title of your site
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /blog/
-google_analytics_key: ""
+title: Whiteside Advisory
+email: jeff@wh.itesi.de
+description: >
+  Personal perspectives on security leadership, governance, risk management, and real-world compliance challenges.
 
-# Default description in social shares for the jekyll-seo-tag gem
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+baseurl: ""
 
-# Author details for the jekyll-seo-tag gem
 author:
-  name: Your Name
-  email: your-email@domain.com
-  twitter: # twitter username without the @ symbol
+  name: Jeff Whiteside
+  email: jeff@wh.itesi.de
+  phone: 
+url: "https://wh.itesi.de" # your base hostname & protocol
+timezone: America/Chicago
 
-# Social details for the jekyll-seo-tag gem
+# Build settings
+plugins_dir:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Social profiles (if you have them)
 social:
-  name: Strata Reloaded Template
-  links:
-    - https://github.com/comfusion/strata-reloaded-jekyll-template
+  twitter: 
+  linkedin: 
+  github: 
 
-permalink: pretty
+# SEO and meta
+locale: "en_US"
+logo: /images/avatar.jpg
+lang: en_US
 
-gems:
-  - "jekyll-feed"
-  - "jekyll-seo-tag"
-  - "jekyll-paginate"
-  - "jekyll-sitemap"
-
-# Jekyll SEO Tag
-webmaster_verifications:
-  google: # 1234
-  bing: # 1234
-  alexa: # 1234
-  yandex: # 1234
-
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
+future: true

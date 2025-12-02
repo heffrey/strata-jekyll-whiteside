@@ -1,0 +1,7 @@
+_config.yml
+_site/2020/06/10/We-are-live/index.html
+_site/2020/06/13/Another-saturday-afternoon/index.html
+_site/2020/11/21/reCAPTCHAv3/index.html
+_site/feed.xml
+_site/index.html
+_site/404/index.html

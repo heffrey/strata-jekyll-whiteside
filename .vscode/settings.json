@@ -1,0 +1,20 @@
+{
+  "files.watcherExclude": {
+    "**/_site/**": true,
+    "**/vendor/**": true,
+    "**/gems/**": true,
+    "**/.sass-cache/**": true,
+    "**/.jekyll-cache/**": true,
+    "**/.bundle/**": true,
+    "**/*.log": true,
+    "**/*.crdownload": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/snap/**": true,
+    "**/*.crt": true,
+    "**/*.csr": true,
+    "**/*.ca-bundle": true
+  }
+}
+

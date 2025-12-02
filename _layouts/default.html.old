@@ -17,8 +17,9 @@
 
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
 
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le7J-gZAAAAAIFTGsv88nwaRjo6iZOmjb-uiG1p"></script>
     {% seo %}
     {% feed_meta %}
 
@@ -27,17 +28,17 @@
 	<body id="top">
     <header id="header">
       <a href="{{ site.url }}" class="image avatar"><img class="editable" src="/images/avatar.jpg" alt="{{ site.author.name }}"></a>
-      <h1 class="editable"><strong><a href="/">Whiteside Advisory</a></strong><br>
-      Exploring Security, GRC, Risk Management & Leadership</h1>
-      <h5><br>Perspectives on building practical, real-world security programs.</h5>
-      <nav>
-        <a href="/about/">About</a>
-      </nav>
+      <h1 class="editable"><strong><a href="/">wh.itesi.de</a></strong>, the personal vanity site of<br>
+      jeff whiteside. security guy, grc dude,<br>
+      and privacy advocate. </h1>
+      <h5><br>my <a href='https://wh.itesi.de/55AD82B71B7D71BE7C244A12456CB1F1FC60A7C5.asc'>public key</a> fingerprint is..<br>
+	      <code class="small">{{ site.author.fingerprint }}</code></h5>
     </header> 
 
     {{ content }}
 
     <footer id="footer">
+      <p class="editor-link"><a href="cloudcannon:collections/_data/social.yml" class="button"><strong>&#9998;</strong> Update Social Icons</a></p>
       <ul class="icons">
         {% for account in site.data.social %}
 					<li>
@@ -55,9 +56,9 @@
         {% endif %}
       </ul>
       <ul class="copyright">
-          <li>&copy; {{ site.time | date: '%Y' }} Whiteside Advisory</li>
+          <li>&copy; Untitled</li>
           <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-          <li>Theme: Adapted from Strata Jekyll</li>
+          <li>Theme: <a href="https://github.com/old-jekyll-templates/Strata-Jekyll-Theme">Strata Jekyll</a></li>
       </ul>
     </footer>
 
@@ -69,6 +70,15 @@
 		<script src="/js/main.js"></script>
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+
+				ga("create", "{{ site.google_analytics_key }}", "auto");
+				ga("send", "pageview");
+			</script>
 		{% endif %}
 
 	</body>

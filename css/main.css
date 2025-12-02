@@ -12,6 +12,16 @@
 		vertical-align: baseline;
 	}
 
+	header nav a {
+		display: inline-block;
+		margin-top: 10px;
+		color: rgba(255, 255, 255, 0.5);
+		text-decoration: none;
+	}
+	header nav a:hover {
+		text-decoration: underline;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -1667,15 +1677,17 @@
 	}
 
 	code {
-		background: #f7f7f7;
-		border-radius: 0.35em;
-		border: solid 2px #efefef;
 		font-family: "Courier New", monospace;
-		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
 	}
-
+        .small {
+	  color: black;
+          border-radius: 0.35em;
+	  border: solid 2px #efefef;
+	  font-size: 0.6em;
+       	  background: #f7f7f7;
+	}
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
@@ -3164,3 +3176,43 @@
  	.cms-editor-active .editor-link {
  		display: inline-block;
  	}
+
+  /*.rc-anchor { opacity:0;} */
+
+/* Custom ordered list styling */
+article ol {
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+article ol > li {
+    counter-increment: item;
+    margin-bottom: 2em;
+    position: relative;
+    padding-left: 3.5em;
+}
+
+article ol > li::before {
+    content: counter(item);
+    background: #485763;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+article ol > li strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #485763;
+}

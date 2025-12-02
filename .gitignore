@@ -1,2 +1,29 @@
+# Jekyll build output
 _site/
 .sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependencies
+vendor/
+.bundle/
+
+# Log files
+*.log
+deploy_output.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+*.crdownload
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories (optional - uncomment if you don't want to track editor settings)
+# .vscode/
+# .idea/
